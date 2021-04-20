@@ -1,0 +1,33 @@
+<header class="container">
+    <nav class="navbar navbar-expand-sm navbar-highlight bg-highlight sticky-top ">
+        <a href="#" class="navbar-brand"><img src="../../assets/images/logo-color.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
+            <ul class="navbar-nav">
+                <div class="partir mr-5">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Our services</a>
+                        <span class="caret"></span>
+                        <div class="dropdown-menu"  aria-labelledby="dropdown_target">
+                            <a href="#" class="dropdown-item" *ngFor="let menus of menu;">{{ menus.subitem }}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                </div>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Get the app</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+</header>

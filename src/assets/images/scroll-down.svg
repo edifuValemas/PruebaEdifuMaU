@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="83px" viewBox="0 0 70 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 11</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page" transform="translate(-1115.000000, -806.000000)">
+            <g id="Group-11" transform="translate(1115.000000, 806.000000)">
+                <text id="scroll-down" font-family="NeuzeitGro-Reg, NeuzeitGro" font-size="15" font-weight="normal" letter-spacing="-0.24" fill="#FFFFFF">
+                    <tspan x="0" y="11">scroll down</tspan>
+                </text>
+                <g id="Group-5" transform="translate(23.000000, 22.000000)">
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2" x="0" y="0" width="24" height="43" rx="12"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" x="11" y="7" width="2" height="9" rx="1"></rect>
+                    <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" points="4 51 12 59 20 51"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

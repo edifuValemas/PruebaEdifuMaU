@@ -1,0 +1,95 @@
+@import 'fonts.css';
+@import 'variables',
+        'mixins';
+
+
+.img-tiendas{
+    img{
+        width: 119px;
+        object-fit: cover;
+        height: 35px;
+        border-radius: 6px;
+    }
+}
+.back-main{
+    &::before{
+        content: "";
+        width: 100%;
+        height: 75vh;
+        background-image: linear-gradient(219deg, #140064 0%, #6246E4 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+     &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../assets/images/back-title.svg);
+        width: 350px;
+        height: 340px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 2;
+        top: -6%;
+
+    }
+    
+}
+.back-points{
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../assets/images/back-puntos.png);
+        width: 350px;
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+        top: 0;
+        left: -70px;
+
+    }
+}
+
+@media (max-width: 650px) {
+
+    .back-main{
+            &::after{
+                width: 190px;
+            }
+            &:before{
+                height: 100vh;
+            }
+    }
+    .navBg{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 1200px) {
+    .back-main:after{
+        width: 30%;
+        top: -5%;
+
+    }
+
+}
+@media (min-width: 1300px) {
+    .back-main:after{
+        width: 27%;
+        top: -5%;
+    }
+
+}
+   
+@media (min-width: 1350px) {
+    .back-main:after{
+        width: 33%;
+        top: -10%;
+    }
+
+}
+   
+
+
+ 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="432px" height="223px" viewBox="0 0 432 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>wave</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page" fill="#FFFFFF">
+            <path d="M0,-98 L358.091768,-98 C431.413933,-48.8012256 450.180539,5.70204528 414.391587,65.5098125 C360.708159,155.221463 277.886487,78.1218835 224.266869,169.275395 C188.520458,230.044402 113.764835,239.260603 0,196.923997 L0,-98 Z" id="wave"></path>
+        </g>
+    </g>
+</svg>

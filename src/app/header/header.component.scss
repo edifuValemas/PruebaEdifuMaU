@@ -1,0 +1,128 @@
+@import '../../scss/variables',
+        '../../scss/mixins';
+
+.navbar{
+    padding: .5rem 0 !important;
+}
+.dropdown{
+    &.show{
+        .dropdown-toggle{
+            &:after{
+                content: "\e98a";
+                font-family: "icons";
+                margin: 0 0 0 10px;
+                border: none;
+                vertical-align: -3px;
+                font-size: 16px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.dropdown-menu{
+    background: transparent;
+    border: none;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+    &.show{
+        border-top: 1px solid #fff;
+        margin-top: 11px;
+        border-radius: 0;
+        padding-left: 9px;
+    }
+    .dropdown-item{
+        color: $blanco;
+        padding: 10px 0;
+        &:hover{
+            background: transparent;
+        }
+    }
+}
+.dropdown-toggle{
+    &:after{
+        content: "\e98a";
+        font-family: "icons";
+        margin: 0 0 0 10px;
+        border: none;
+        vertical-align: -3px;
+        font-size: 16px;
+        transition: all 0.5s ease;
+    }
+}
+a{
+    &.nav-link{
+        font-family: "NeuzeitGro-Reg";
+        @include rem(18);
+        color: $blanco !important;
+        
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.partir{
+    display: flex;
+}
+.navbar-toggler-icon{
+    position: relative;
+    &::before{
+        content: "";
+        width: 33px;
+        height: 3px;
+        background: rgb(255 255 255);
+        border-radius: 30px;
+        position: absolute;
+        z-index: 4;
+        top: 9px;
+        left: -4px
+    }
+    &::after{
+        content: "";
+        width: 33px;
+        height: 3px;
+        background: $blanco;
+        border-radius: 30px;
+        position: absolute;
+        z-index: 4;
+        top: 23px;
+    }
+}
+@media (max-width: 650px) {
+    
+    .navbar-nav {
+        margin-top: 40px;
+    }
+    .navbar-brand{
+        img{
+            width: 120px;
+        }
+    }
+    .navbar-toggler{
+        background: $secundario;
+        position: absolute;
+        top: 15px;
+        right: -15px;
+        border-radius: 10px 0 0 10px;
+        padding: 10px;
+        max-width: 75px;
+        width: 100%;
+    }
+    .dropdown-menu.show{
+        border-bottom: 1px solid rgb(255 255 255);
+    }
+    .dropdown-item{
+        text-align: right;
+    }
+    .partir{
+        display: flex;
+        flex-flow: column;
+        &.mr-5{
+            margin-right: 0 !important;
+        }
+    }
+    .nav-item{
+        text-align: right;
+    }
+}
